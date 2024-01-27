@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitAI.Regressions", "KitAI.Regressions\KitAI.Regressions.csproj", "{984CBBDB-D30E-4FDB-AE86-9BAD278850EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitAI.CLI", "KitAI.CLI\KitAI.CLI.csproj", "{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{984CBBDB-D30E-4FDB-AE86-9BAD278850EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984CBBDB-D30E-4FDB-AE86-9BAD278850EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984CBBDB-D30E-4FDB-AE86-9BAD278850EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984CBBDB-D30E-4FDB-AE86-9BAD278850EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B12B119F-8695-4526-B148-27F3A61E4888}
+	EndGlobalSection
+EndGlobal

@@ -2,12 +2,26 @@
 
 namespace KitAI.Regressions.Models;
 
+/// <summary>
+/// Represents a linear regression model.
+/// </summary>
 public class LinearRegression : IRegressionModel
 {
+    /// <summary>
+    /// Gets the coefficient B1 of the linear regression model.
+    /// </summary>
     public double B1 { get; private set; } = 0d;
 
+    /// <summary>
+    /// Gets the intercept B0 of the linear regression model.
+    /// </summary>
     public double B0 { get; private set; } = 0d;
 
+    /// <summary>
+    /// Trains the linear regression model using the provided input and output data.
+    /// </summary>
+    /// <param name="inputData">The input data used for training.</param>
+    /// <param name="outputData">The corresponding output data used for training.</param>
     public void Train(double[] inputData, double[] outputData)
     {
         double xAverage = GetAverageValue(inputData);
@@ -17,6 +31,11 @@ public class LinearRegression : IRegressionModel
         CalculationB0Coefficient(xAverage, yAverage);
     }
 
+    /// <summary>
+    /// Predicts the output for the given input data using the trained linear regression model.
+    /// </summary>
+    /// <param name="inputData">The input data for prediction.</param>
+    /// <returns>The predicted output value.</returns>
     public double Predict(double inputData) =>
         B0 + B1 * inputData;
 

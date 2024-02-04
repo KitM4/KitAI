@@ -1,6 +1,6 @@
 ﻿using KitAI.Regressions.Models;
 using KitAI.Regressions.Interfaces;
-using KitAI.Regressions.ActivationFunctions;
+using KitAI.Common.ActivationFunctions;
 
 Console.WriteLine("=== KitAI Linear regression ===");
 Console.WriteLine();

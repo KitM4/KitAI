@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KitAI.Common\KitAI.Common.csproj" />
     <ProjectReference Include="..\KitAI.Regressions\KitAI.Regressions.csproj" />
   </ItemGroup>
 

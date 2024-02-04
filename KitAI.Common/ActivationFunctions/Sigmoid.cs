@@ -1,6 +1,6 @@
-﻿using KitAI.Regressions.Interfaces;
+﻿using KitAI.Common.Interfaces;
 
-namespace KitAI.Regressions.ActivationFunctions;
+namespace KitAI.Common.ActivationFunctions;
 
 /// <summary>
 /// Represents the Sigmoid activation function.

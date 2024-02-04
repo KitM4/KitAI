@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\KitAI.Common\KitAI.Common.csproj" />
-  </ItemGroup>
-
 </Project>

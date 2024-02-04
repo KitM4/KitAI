@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitAI.Regressions", "KitAI.Regressions\KitAI.Regressions.csproj", "{984CBBDB-D30E-4FDB-AE86-9BAD278850EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KitAI.Regressions", "KitAI.Regressions\KitAI.Regressions.csproj", "{984CBBDB-D30E-4FDB-AE86-9BAD278850EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitAI.CLI", "KitAI.CLI\KitAI.CLI.csproj", "{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KitAI.CLI", "KitAI.CLI\KitAI.CLI.csproj", "{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitAI.Perceptrons", "KitAI.Perceptrons\KitAI.Perceptrons.csproj", "{117B5C1A-AE7E-4834-B6F3-5A3D9F290F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitAI.Common", "KitAI.Common\KitAI.Common.csproj", "{99A6E79D-5135-4DE1-879B-E8952D4B5EB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28DC004D-4EA6-4CE8-886D-AF1602F4A27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117B5C1A-AE7E-4834-B6F3-5A3D9F290F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117B5C1A-AE7E-4834-B6F3-5A3D9F290F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117B5C1A-AE7E-4834-B6F3-5A3D9F290F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117B5C1A-AE7E-4834-B6F3-5A3D9F290F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A6E79D-5135-4DE1-879B-E8952D4B5EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A6E79D-5135-4DE1-879B-E8952D4B5EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A6E79D-5135-4DE1-879B-E8952D4B5EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A6E79D-5135-4DE1-879B-E8952D4B5EB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿namespace KitAI.Regressions.Interfaces;
+﻿namespace KitAI.Common.Interfaces;
 
 /// <summary>
 /// Represents an activation function interface.

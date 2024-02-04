@@ -1,5 +1,5 @@
 ﻿using KitAI.Common.Interfaces;
-using KitAI.Regressions.Interfaces;
+using KitAI.Common.Interfaces.Models;
 
 namespace KitAI.Regressions.Models;
 

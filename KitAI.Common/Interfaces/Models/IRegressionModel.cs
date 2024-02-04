@@ -1,4 +1,4 @@
-﻿namespace KitAI.Regressions.Interfaces;
+﻿namespace KitAI.Common.Interfaces.Models;
 
 /// <summary>
 /// Represents an interface for regression models.

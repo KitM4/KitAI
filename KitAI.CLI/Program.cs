@@ -1,6 +1,9 @@
 ﻿using KitAI.Regressions.Models;
-using KitAI.Regressions.Interfaces;
+using KitAI.Perceptrons.Models;
+using KitAI.Common.Interfaces.Models;
 using KitAI.Common.ActivationFunctions;
+
+// ============================================================================================================================================================
 
 Console.WriteLine("=== KitAI Linear regression ===");
 Console.WriteLine();
@@ -34,6 +37,9 @@ linearRegression.Train(depositSet, profitSet);
 
 Console.WriteLine($"* The projected profit will be: ${linearRegression.Predict(depositSize):F2}");
 Console.WriteLine();
+
+// ============================================================================================================================================================
+
 Console.WriteLine("=== KitAI Logistic regression ===");
 Console.WriteLine();
 Console.WriteLine(
@@ -53,5 +59,44 @@ double prediction = logisticRegression.Predict(testHours);
 
 Console.WriteLine($"* If you spend {testHours} hours studying, you will pass the exam with a {prediction * 100:F2}% chance");
 Console.WriteLine();
+
+// ============================================================================================================================================================
+
+Console.WriteLine("=== KitAI Single layer perceptron ===");
+Console.WriteLine();
+Console.WriteLine("The example demonstrates training the perceptron to learn the logical AND function");
+Console.WriteLine();
+
+int inputSize = 2;
+double learningRate = 0.01;
+
+IPerceptronModel perceptron = new SingleLayerPerceptron(new Step(), inputSize, learningRate);
+perceptron.RandomizeWeights();
+
+double[][] trainingInputs =
+[
+    [0, 0],
+    [0, 1],
+    [1, 0],
+    [1, 1]
+];
+
+int[] targets = [-1, -1, -1, 1];
+
+for (int epoch = 0; epoch < 1000; epoch++)
+{
+    for (int i = 0; i < trainingInputs.Length; i++)
+        perceptron.Train(trainingInputs[i], targets[i]);
+}
+
+for (int i = 0; i < trainingInputs.Length; i++)
+{
+    double output = perceptron.Compute(trainingInputs[i]);
+    Console.WriteLine($"Input: [{string.Join(", ", trainingInputs[i])}], Prediction: {output}");
+}
+Console.WriteLine();
+
+// ============================================================================================================================================================
+
 Console.WriteLine("Press any key to close the program...");
 Console.ReadKey(false);

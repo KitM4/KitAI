@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KitAI.Common\KitAI.Common.csproj" />
+    <ProjectReference Include="..\KitAI.Perceptrons\KitAI.Perceptrons.csproj" />
     <ProjectReference Include="..\KitAI.Regressions\KitAI.Regressions.csproj" />
   </ItemGroup>
 
